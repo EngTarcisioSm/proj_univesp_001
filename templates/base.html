@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block 'titulo'%}{%endblock%}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+
+
+<body>
+  
+    <header>
+        <h1>{%block 'titulo1'%}{%endblock%}</h1>
+    </header>
+    
+    <main>
+        {%block 'conteudo'%}{%endblock%}
+    </main>
+
+    <footer>
+        <h2>Projeto Desenvolvido por:</h2>
+        <p>Bruna</p>
+        <p>Douglas</p>
+        <p>Luma</p>
+        <p>Robson</p>
+        <p>Roger</p>
+        <p>Tarcísio</p>
+    </footer>
+
+    <script src="{%static 'paginas/js/script.css'%}"></script>
+</body>
+
+</html>
